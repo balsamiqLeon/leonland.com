@@ -30,7 +30,7 @@ button {
 
 	button:hover {
 		border: 1px solid #bbb;
-		background-color: #2278CC;
+		background-color: #36487F;
 		color: #eee;
 	 }
 
@@ -53,4 +53,3 @@ body > h1, body > h2 {
  }
 
 body > h2 a:hover {text-decoration: underline;}
-
