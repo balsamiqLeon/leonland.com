@@ -1,0 +1,66 @@
+<html>
+<title>Questions My Wife Asks</title>
+<head>
+<style>
+h1 a {
+/*  font-family: arial, sans-serif;
+  font-size: 24px;
+  font-weight: normal;
+  text-decoration: none;*/
+}
+
+h1, h2 {
+	text-align: center;
+}
+
+h2 {
+	font-size: 56px;
+}
+
+h2 a, h2 a:hover, h2 a:visited {
+	color: #333;
+}
+</style> 
+</head>
+<body>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+
+<script>
+$(document).ready(function(){
+	var questions = ["What's rolfing?", 
+"What do you think about Nike as a brand?", 
+"What's Madonna up to these days?", 
+"What is titration?", 
+"What's a hernia?", 
+"Who do you like more, Washed Out or Modest Mouse?", 
+"What is meant by 'thug life'?", 
+"What does 'steam punk' even mean?", 
+"What's a faux hawk?", 
+"When does the sun set these days?", 
+"What day is it today?", 
+"Does Craigslist have an app?", 
+"If it's from goat, is it still dairy?", 
+"Who sells bookends these days?", 
+"So, do you think Bert and Ernie were gay?", 
+"What's a Content Strategist?", 
+"How much fat is in whole milk?", 
+"Is Mos Def still cool?", 
+"Who invented the bar code?", 
+"What's a neutrino?", 
+"Do you think Mark Zuckerberg is a nice guy?"];
+
+var result = function() {
+   return questions[Math.floor(Math.random() * questions.length)];
+}
+
+link='<a href="http://leonbarnard.org/questionsmywifeasks/index.html" title="Click for more">'+result()+"</a>";
+
+$("#text").html(link)});
+
+</script>
+
+<h1>Questions my wife asks:</h1>
+
+<h2 id="text"></h2>
+
+</body></html>
