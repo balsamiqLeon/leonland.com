@@ -9,6 +9,14 @@ body {
 	background-color: $body-bg-color;
 }
 
+body > h1 {
+	font-family: arial, sans-serif;
+	padding-top: 15px;
+	margin: 0;
+	text-align: center;
+	display: none;
+ }
+
 footer {
 	background-color: $link-color;
 	padding: 13px 10px 8px 205px;
@@ -16,7 +24,7 @@ footer {
 	font-size: 90%;
  }
 
-p, section li {
+p {
 	line-height: 1.7;
 	font-size: 100%
  }
@@ -35,10 +43,10 @@ a {
 	text-decoration: none;
  }
 
-	a.source {
-		font-weight: normal;
-		font-style: italic;
-	 }
+ a.source {
+ 		font-weight: normal;
+ 		font-style: italic;
+ 	 }
 
 nav, section h1 {
 	font-family: arial, sans-serif;
@@ -48,53 +56,55 @@ nav, section h1 {
 nav {
 	position: fixed;
 	padding-left: 10px;
- }
 
-	nav ul {
+	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0 0 0 15px;
 	 }
 
-	nav li {
+	li {
 		padding: 1em 0;
 		font-weight: bold;
 		line-height: 1;
 		font-size: 100%;
-	 }
 
-		nav li a {
+		a {
 			text-decoration: none;
 			color: $text-color;
 			border-bottom: none;
 		 }
-
-section a:hover {text-decoration: underline;}
+	 }
+ }
 
 section {
 	width: 618px;
 	margin: 3em auto 4em auto;
- }
 
-	section h1 {
+	a:hover {
+		text-decoration: underline;
+	}
+
+	h1 {
 		text-align: center;
 		text-transform: uppercase;
 		font-size: 18px;
 	 }
 
-  section li {padding: 5px 0;}
+	 ul {
+	 	padding-left: 1em;
+	 	list-style-type: circle;
+	  }
 
-body > h1 {
-	font-family: arial, sans-serif;
-	padding-top: 15px;
-	margin: 0;
-	text-align: center;
-	display: none;
- }
+  li {
+		@extend p;
+		padding: 5px 0;
+	}
+}
 
 section#me {
-	margin: 1em auto;
-}
+		margin: 1em auto;
+	}
 
 #me img {
 	margin-left: auto;
@@ -104,7 +114,7 @@ section#me {
 	border-radius: 50%;
 	box-shadow: 1px 2px 5px grey;
 	-webkit-filter: grayscale(.1);
-  filter: grayscale(.1);
+	filter: grayscale(.1);
 	opacity: .9;
 }
 
@@ -134,11 +144,6 @@ section#me {
 #connect li:hover, #interests li:hover {
 	border: 1px solid #bbb;
 	background-color: #f3f3f3;
- }
-
-section ul {
-	padding-left: 1em;
-	list-style-type: circle;
  }
 
 #interests ul, #connect ul {
