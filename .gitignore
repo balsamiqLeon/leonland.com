@@ -1,2 +1,4 @@
 /_harp/
 *.sh
+
+.DS_Store
