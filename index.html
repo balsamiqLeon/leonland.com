@@ -14,8 +14,11 @@
       ga('create', 'UA-685052-1', 'auto');
       ga('send', 'pageview');
     </script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="filter.js"></script>
 		<title>Leon Barnard has a website</title>
 		<link rel="stylesheet" href="styles.css">
+		<!-- <link rel="stylesheet" href="filter.css"> -->
 	
 	<body id="index">
 <h1>Leonland</h1>
@@ -36,53 +39,54 @@
 		</section>
 		<section id="about">
   		<h1>About Me</h1>
-      <p>My name is <strong>Leon Barnard</strong>. I'm a dad, husband, and designer of user experiences. I work at <a href="http://balsamiq.com/">Balsamiq</a>, maker of <a href="http://balsamiq.com/products/mockups/">Mockups</a>, the best little wireframing tool around. I help people and technology get along better.</p>
+      <p>My name is <strong>Leon Barnard</strong>. I'm a dad, husband, and writer/designer. I work at <a href="http://balsamiq.com/">Balsamiq</a>, maker of <a href="http://balsamiq.com/products/mockups/">Mockups</a>, the best little wireframing tool around. I help people and technology get along better.</p>
+			<p>I <a href="#writing">write</a> and <a href="#speaking">speak</a> about <a href="#docs" class="filter-docs">#documentation</a>, <a href="#ux" class="filter-ux">#UX</a>, <a href="#wireframing" class="filter-wireframing">#wireframing</a>, <a href="#remote" class="filter-remote">#remote work</a>, and <a href="#web" class="filter-web">#web technologies</a><a href="#all" class="all hidden"><em> (show all)</em></a>. Sometimes I <a href="#projects">make stuff</a>.</p>
 		<hr>
 		</section>
 		<section id="writing">
-			<h1>Writing</h1>
+			<h1>Writing <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
 				<ul>
-					<li><a href="http://docslikecode.com/articles/balsamiq-case-study-part-3/">Balsamiq Docs Case Study, Part 3: Lists Get a Makeover</a> - <time datetime="2017-04-15">April 15, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
-					<li><a href="http://docslikecode.com/articles/balsamiq-case-study-part-2/">Balsamiq Docs Case Study, Part 2: Animated GIFs Pause and Play</a> - <time datetime="2017-04-09">April 9, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
-					<li><a href="http://docslikecode.com/articles/balsamiq-case-study-part-1/">Balsamiq Docs Case Study, Part 1: Multiple Product Versions</a> - <time datetime="2017-04-04">April 4, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
-					<li><a href="http://uxmastery.com/wireframing-for-beginners/">Wireframing for Beginners</a> - <time datetime="2016-10-18">October 18, 2016</time> - <a href="http://uxmastery.com/" class="source">UX Mastery</a></li>
-					<li><a href="https://blog.balsamiq.com/edit-the-balsamiq-docs/">Edit the Balsamiq Docs!</a> - <time datetime="2016-08-02">August 2, 2016</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="http://uxmastery.com/ux-real-world/">From the Classroom to the Cubicle: UX in the Real World</a> - <time datetime="2016-07-12">July 12, 2016</time> - <a href="http://uxmastery.com/" class="source">UX Mastery</a></li>
-					<li><a href="http://blog.teamtreehouse.com/getting-started-static-sites">Getting Started with Static Sites</a> - <time datetime="2016-06-21">June 21, 2016</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
-					<li><a href="http://blogs.atlassian.com/2016/05/bridging-gap-content-design-teams-wireframes/">Bridging the Gap Between Content and Design With Wireframes</a> - <time datetime="2016-05-31">May 31, 2016</time> - <a href="http://blogs.atlassian.com" class="source">Atlassian Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/new-hidden-powers/">In Case You Missed It: New Hidden Powers in Balsamiq Mockups 3</a> - <time datetime="2016-05-02">May 2, 2016</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="http://blog.teamtreehouse.com/html-css-still-relevant-designers-2016">HTML and CSS: Still Relevant for Designers in 2016</a> - <time datetime="2016-02-16">February 16, 2016</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
-					<li><a href="http://blog.teamtreehouse.com/soft-skills-ux-designers">Soft Skills for UX Designers</a> - <time datetime="2015-12-30">December 30, 2015</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/new-documentation-site/">Docs.balsamiq.com: Our New Static Documentation Site, Powered by Hugo</a> - <time datetime="2015-11-19">November 19, 2015</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/wireframe-presentation-tips/">Tips for Presenting Your Wireframes</a> - <time datetime="2015-11-05">November 5, 2015</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="http://blog.teamtreehouse.com/3-steps-better-ui-wireframes">3 Steps to Better UI Wireframes</a> - <time datetime="2015-09-24">September 24, 2015</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/on-working-from-home-better/">On Working from Home, Better</a> - <time datetime="2015-09-03">September 3, 2015</time> - <a href="https://blog.balsamiq.com/category/company/" class="source">Balsamiq Company Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/road-to-balsamiq-mockups-3/">How We Got Here: The Road to Balsamiq Mockups 3</a> - <time datetime="2015-04-17">April 17, 2015</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/using-balsamiq-mockups-with-pattern-libraries-and-frameworks/">Using Balsamiq Mockups with Pattern Libraries and Frameworks</a> - <time datetime="2014-08-06">August 6, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="http://blog.thinkapps.com/design/tips-for-effective-wireframing/">Tips for Effective Wireframing</a> - <time datetime="2014-07-16">July 16, 2014</time> - <a href="http://blog.thinkapps.com/" class="source">ThinkApps Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/mockups-tips-for-getting-unstuck/">Mockups Tips for Getting Unstuck</a> - <time datetime="2014-06-18">June 18, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/behind-the-scenes-of-our-documentation-process/">Behind the Scenes of Our Documentation Process</a> - <time datetime="2014-02-10">February 10, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="https://blog.balsamiq.com/improving-our-support-site/">Improving the Experience of Our Support Website</a> - <time datetime="2014-01-21">January 21, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-					<li><a href="https://medium.com/@leonbarnard/forget-your-dream-job-5d1c4689065a">Forget your Dream Job</a> - <time datetime="2014-01-17">January 17, 2014</time> - <a href="https://medium.com" class="source">Medium</a></li>
-					<li><a href="https://blog.balsamiq.com/the-user-experience-gap/">The User Experience Gap</a> - <time datetime="2013-09-17">September 17, 2013</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-          <li><a href="https://blog.balsamiq.com/tales-from-a-ux-guerilla/">Tales from a UX Guerrilla</a> - <time datetime="2013-06-03">June 3, 2013</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
-          <li><a href="https://blog.balsamiq.com/using-mockups-in-your-agile-user-stories/">Using Mockups in your Agile User Stories</a> - <time datetime="2013-02-06">February 6, 2013</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="docs"><a href="http://docslikecode.com/articles/balsamiq-case-study-part-3/">Balsamiq Docs Case Study, Part 3: Lists Get a Makeover</a> - <time datetime="2017-04-15">April 15, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
+					<li class="docs"><a href="http://docslikecode.com/articles/balsamiq-case-study-part-2/">Balsamiq Docs Case Study, Part 2: Animated GIFs Pause and Play</a> - <time datetime="2017-04-09">April 9, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
+					<li class="docs"><a href="http://docslikecode.com/articles/balsamiq-case-study-part-1/">Balsamiq Docs Case Study, Part 1: Multiple Product Versions</a> - <time datetime="2017-04-04">April 4, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
+					<li class="ux wireframing"><a href="http://uxmastery.com/wireframing-for-beginners/">Wireframing for Beginners</a> - <time datetime="2016-10-18">October 18, 2016</time> - <a href="http://uxmastery.com/" class="source">UX Mastery</a></li>
+					<li class="docs ux"><a href="https://blog.balsamiq.com/edit-the-balsamiq-docs/">Edit the Balsamiq Docs!</a> - <time datetime="2016-08-02">August 2, 2016</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="ux"><a href="http://uxmastery.com/ux-real-world/">From the Classroom to the Cubicle: UX in the Real World</a> - <time datetime="2016-07-12">July 12, 2016</time> - <a href="http://uxmastery.com/" class="source">UX Mastery</a></li>
+					<li class="web"><a href="http://blog.teamtreehouse.com/getting-started-static-sites">Getting Started with Static Sites</a> - <time datetime="2016-06-21">June 21, 2016</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
+					<li class="wireframing"><a href="http://blogs.atlassian.com/2016/05/bridging-gap-content-design-teams-wireframes/">Bridging the Gap Between Content and Design With Wireframes</a> - <time datetime="2016-05-31">May 31, 2016</time> - <a href="http://blogs.atlassian.com" class="source">Atlassian Blog</a></li>
+					<li class="ux"><a href="https://blog.balsamiq.com/new-hidden-powers/">In Case You Missed It: New Hidden Powers in Balsamiq Mockups 3</a> - <time datetime="2016-05-02">May 2, 2016</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="web"><a href="http://blog.teamtreehouse.com/html-css-still-relevant-designers-2016">HTML and CSS: Still Relevant for Designers in 2016</a> - <time datetime="2016-02-16">February 16, 2016</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
+					<li class="ux"><a href="http://blog.teamtreehouse.com/soft-skills-ux-designers">Soft Skills for UX Designers</a> - <time datetime="2015-12-30">December 30, 2015</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
+					<li class="docs ux"><a href="https://blog.balsamiq.com/new-documentation-site/">Docs.balsamiq.com: Our New Static Documentation Site, Powered by Hugo</a> - <time datetime="2015-11-19">November 19, 2015</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="wireframing"><a href="https://blog.balsamiq.com/wireframe-presentation-tips/">Tips for Presenting Your Wireframes</a> - <time datetime="2015-11-05">November 5, 2015</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="wireframing"><a href="http://blog.teamtreehouse.com/3-steps-better-ui-wireframes">3 Steps to Better UI Wireframes</a> - <time datetime="2015-09-24">September 24, 2015</time> - <a href="http://blog.teamtreehouse.com/" class="source">Treehouse Blog</a></li>
+					<li class="remote"><a href="https://blog.balsamiq.com/on-working-from-home-better/">On Working from Home, Better</a> - <time datetime="2015-09-03">September 3, 2015</time> - <a href="https://blog.balsamiq.com/category/company/" class="source">Balsamiq Company Blog</a></li>
+					<li class="ux"><a href="https://blog.balsamiq.com/road-to-balsamiq-mockups-3/">How We Got Here: The Road to Balsamiq Mockups 3</a> - <time datetime="2015-04-17">April 17, 2015</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="ux web"><a href="https://blog.balsamiq.com/using-balsamiq-mockups-with-pattern-libraries-and-frameworks/">Using Balsamiq Mockups with Pattern Libraries and Frameworks</a> - <time datetime="2014-08-06">August 6, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="wireframing"><a href="http://blog.thinkapps.com/design/tips-for-effective-wireframing/">Tips for Effective Wireframing</a> - <time datetime="2014-07-16">July 16, 2014</time> - <a href="http://blog.thinkapps.com/" class="source">ThinkApps Blog</a></li>
+					<li class="ux"><a href="https://blog.balsamiq.com/mockups-tips-for-getting-unstuck/">Mockups Tips for Getting Unstuck</a> - <time datetime="2014-06-18">June 18, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="docs ux"><a href="https://blog.balsamiq.com/behind-the-scenes-of-our-documentation-process/">Behind the Scenes of Our Documentation Process</a> - <time datetime="2014-02-10">February 10, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="ux docs"><a href="https://blog.balsamiq.com/improving-our-support-site/">Improving the Experience of Our Support Website</a> - <time datetime="2014-01-21">January 21, 2014</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+					<li class="ux"><a href="https://medium.com/@leonbarnard/forget-your-dream-job-5d1c4689065a">Forget your Dream Job</a> - <time datetime="2014-01-17">January 17, 2014</time> - <a href="https://medium.com" class="source">Medium</a></li>
+					<li class="ux"><a href="https://blog.balsamiq.com/the-user-experience-gap/">The User Experience Gap</a> - <time datetime="2013-09-17">September 17, 2013</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+          <li class="ux"><a href="https://blog.balsamiq.com/tales-from-a-ux-guerilla/">Tales from a UX Guerrilla</a> - <time datetime="2013-06-03">June 3, 2013</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
+          <li class="ux wireframing"><a href="https://blog.balsamiq.com/using-mockups-in-your-agile-user-stories/">Using Mockups in your Agile User Stories</a> - <time datetime="2013-02-06">February 6, 2013</time> - <a href="https://blog.balsamiq.com/category/ux/" class="source">Balsamiq UX Blog</a></li>
 				</ul>
 		<hr>
 		</section>
 
 		<section id="speaking">
-			<h1>Interviews and Talks</h1>
+			<h1>Interviews and Talks <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
 				<ul>
-					<li><a href="https://www.getsmarter.com/career-advice/industry-advice/benefits-of-remote-working">9 Workplace Experts on the Benefits of Remote Working</a> - <time datetime="2017-02-17">February 17, 2017</time> - <a href="https://www.getsmarter.com/career-advice/" class="source">GetSmarter Career Advice Newsletter</a></li>
-					<li><a href="http://www.slideshare.net/LeonBarnard/bending-markdown-to-your-will-with-your-static-site-generator">Lightning Talk: Bending Markdown to Your Will with Your Static Site Generator</a> - <time datetime="2017-02-07">February 7, 2017</time> - <a href="https://www.meetup.com/Write-the-Docs-SF/events/237025601/" class="source">Write The Docs San Francisco Meetup</a></li>
-					<li><a href="https://www.youtube.com/watch?v=KnZrypOaVCg">Wireframing for Newbies</a> - <time datetime="2016-12-22">December 22, 2016</time> - <a href="https://www.youtube.com/user/Balsamiq" class="source">Balsamiq YouTube Channel</a></li>
-          <li><a href="https://blog.thesurfoffice.com/do-it-like-balsamiq-and-become-a-kickass-remote-first-company-21bdb58b38ab">Do It Like Balsamiq and Become a Kickass Remote-First Company</a> - <time datetime="2016-11-14">November 14, 2016</time> - <a href="https://blog.thesurfoffice.com/" class="source">Surf Office Blog</a></li>
-					<li><a href="http://blog.proven.com/remote-work#leon-barnard">38 Companies Share Their Secrets to Remote Work Success</a> - <time datetime="2016-07-05">July 5, 2016</time> - <a href="http://blog.proven.com/" class="source">Proven Blog</a></li>
-					<li><a href="https://www.youtube.com/watch?v=Y2TGwUPb8R4">"Transforming your Documentation Process" panel discussion</a> - <time datetime="2016-05-23">May 23, 2016</time> - <a href="http://www.writethedocs.org/conf/na/2016/" class="source">Write The Docs North America 2016 Conference</a></li>
-					<li><a href="http://earnworthy.com/balsamiq-leon-barnard/">Why Marketers Need to Learn Wireframing</a> - <time datetime="2016-02-24">February 24, 2016</time> - <a href="http://earnworthy.com/category/podcast/" class="source">Inbound Unboxed Podcast</a></li>
-					<li><a href="https://www.youtube.com/watch?v=F54V3D3JRrM">Recent and Future Development of Balsamiq Mockups</a> - <time datetime="2015-08-06">August 6, 2015</time> - <a href="http://tools4agileteams.com/display/2015EN/Tools4AgileTeams+2015" class="source">Tools4AgileTeams 2015 Conference</a></li>
-					<li><a href="http://www.slideshare.net/LeonBarnard/leon-barnard-productcamp-sf">"Bridging the Gap Between PM and Dev with a Hybrid UX/BA Role"</a> - <time datetime="2013-10-12">October 12, 2013</time> - <a href="https://productcampsanfrancisco2013a.sched.org" class="source">ProductCampSF 2013</a></li>
+					<li class="remote"><a href="https://www.getsmarter.com/career-advice/industry-advice/benefits-of-remote-working">9 Workplace Experts on the Benefits of Remote Working</a> - <time datetime="2017-02-17">February 17, 2017</time> - <a href="https://www.getsmarter.com/career-advice/" class="source">GetSmarter Career Advice Newsletter</a></li>
+					<li class="docs web"><a href="http://www.slideshare.net/LeonBarnard/bending-markdown-to-your-will-with-your-static-site-generator">Lightning Talk: Bending Markdown to Your Will with Your Static Site Generator</a> - <time datetime="2017-02-07">February 7, 2017</time> - <a href="https://www.meetup.com/Write-the-Docs-SF/events/237025601/" class="source">Write The Docs San Francisco Meetup</a></li>
+					<li class="wireframing"><a href="https://www.youtube.com/watch?v=KnZrypOaVCg">Wireframing for Newbies</a> - <time datetime="2016-12-22">December 22, 2016</time> - <a href="https://www.youtube.com/user/Balsamiq" class="source">Balsamiq YouTube Channel</a></li>
+          <li class="remote"><a href="https://blog.thesurfoffice.com/do-it-like-balsamiq-and-become-a-kickass-remote-first-company-21bdb58b38ab">Do It Like Balsamiq and Become a Kickass Remote-First Company</a> - <time datetime="2016-11-14">November 14, 2016</time> - <a href="https://blog.thesurfoffice.com/" class="source">Surf Office Blog</a></li>
+					<li class="remote"><a href="http://blog.proven.com/remote-work#leon-barnard">38 Companies Share Their Secrets to Remote Work Success</a> - <time datetime="2016-07-05">July 5, 2016</time> - <a href="http://blog.proven.com/" class="source">Proven Blog</a></li>
+					<li class="docs"><a href="https://www.youtube.com/watch?v=Y2TGwUPb8R4">"Transforming your Documentation Process" panel discussion</a> - <time datetime="2016-05-23">May 23, 2016</time> - <a href="http://www.writethedocs.org/conf/na/2016/" class="source">Write The Docs North America 2016 Conference</a></li>
+					<li class="wireframing"><a href="http://earnworthy.com/balsamiq-leon-barnard/">Why Marketers Need to Learn Wireframing</a> - <time datetime="2016-02-24">February 24, 2016</time> - <a href="http://earnworthy.com/category/podcast/" class="source">Inbound Unboxed Podcast</a></li>
+					<li class="ux"><a href="https://www.youtube.com/watch?v=F54V3D3JRrM">Recent and Future Development of Balsamiq Mockups</a> - <time datetime="2015-08-06">August 6, 2015</time> - <a href="http://tools4agileteams.com/display/2015EN/Tools4AgileTeams+2015" class="source">Tools4AgileTeams 2015 Conference</a></li>
+					<li class="ux"><a href="http://www.slideshare.net/LeonBarnard/leon-barnard-productcamp-sf">"Bridging the Gap Between PM and Dev with a Hybrid UX/BA Role"</a> - <time datetime="2013-10-12">October 12, 2013</time> - <a href="https://productcampsanfrancisco2013a.sched.org" class="source">ProductCampSF 2013</a></li>
 				</ul>
 		<hr>
 		</section>
@@ -90,11 +94,11 @@
 		<section id="projects">
 			<h1>Side Projects</h1>
 				<ul>
+					<li><a href="http://mixcloud.com/leonbarnard/">Mixcloud</a> - My amateur DJ mixtapes</li>
 					<li><a href="http://berkeley.workfromhomersclub.com/">Work from Homers Club</a> - A project to build and curate a list of local work-friendly cafes</li>
 					<li><a href="http://leonbarnard.tumblr.com">Stuff I'm Into</a> - A tumblr built using <a href="http://www.ifttt.com" class="source" title="If This Then That">IFTTT</a> to automatically post all my favorites from Pinboard, Twitter, and Pocket</li>
 					<li><a href="http://decidedlydifferentberkeley.tumblr.com/">Decidedly Different</a> - Photos of funky stuff I used to see around my old neighborhood in Berkeley, CA</li>
 					<li><a href="https://github.com/balsamiqLeon/leonland.com">Leonland</a> - This site right here, which started as an exercise to help me learn HTML5 and CSS3</li>
-					<li><a href="http://mixcloud.com/leonbarnard/">Mixcloud</a> - My (very) amateur DJ mixes</li>
 				</ul>
 		<hr>
 		</section>
