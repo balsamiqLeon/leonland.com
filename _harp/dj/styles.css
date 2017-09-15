@@ -16,8 +16,9 @@ body {
 .header img {
 width: 340px;
 /*max-width: 90vw;*/
-opacity: .85;
+opacity: .8;
 border-radius: 3px;
+/*border-radius: 50%;*/
 margin-top: -30px;
 }
 
@@ -60,6 +61,7 @@ section {
 
 section h2 {
   margin-top: 2em;
+  font-size: 1.8em;
 }
 
 section h2 span {
