@@ -1,0 +1,7 @@
+<h1>All posts</h1>
+<ul>
+<% for(var slug in public.blog._data){ %>
+  <li><a href="/blog/<%= slug %>"><%= public.blog._data[slug].title %></a></li>
+  <%- partial("blog/" + slug) %>
+<% }; %>
+</ul>

@@ -1,0 +1,57 @@
+@import 'base';
+
+input, textarea, label {
+	display: block;
+	font-family: 'Source Sans Pro', serif;
+	color: $text-color;
+	width: 95%;
+ }
+
+label {
+	padding: 10px 0;
+	font-size: 110%;
+ }
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #aaa;
+	font-size: 100%;
+	border-radius: 4px;
+ }
+
+button {
+	padding: 15px;
+	width: auto;
+	margin-top: 10px;
+	font-size: 120%;
+	border: 1px solid #aaa;
+	background-color: $top-border-color;
+	border-radius: 4px;
+	color: $text-color;
+ }
+
+	button:hover {
+		border: 1px solid #bbb;
+		background-color: $link-color;
+		color: #eee;
+	 }
+
+fieldset {
+	border: none;
+	background-color: inherit;
+ }
+
+nav a:hover {text-decoration: underline;}
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+ }
+
+body > h1, body > h2 {
+	text-align: center;
+	display: block;
+ }
+
+body > h2 a:hover {text-decoration: underline;}

@@ -1,0 +1,7 @@
+Run these commands from leonland.com directory
+
+To run locally:
+harp server _harp
+
+To compile for pushing to Github:
+harp compile _harp ./

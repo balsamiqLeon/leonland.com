@@ -1,0 +1,33 @@
+		<title>Email me</title>
+		<link rel="stylesheet" href="formstyles.css">
+	</head>
+	<body>
+		<nav>
+		<h1><a href="index.html">&lt; Back</a></h1>
+		</nav>
+    <main>
+		<section>
+  		<h1>Email Me</h1>
+      <form method="POST" action="http://formspree.io/leonbarnard@gmail.com">
+        <fieldset>
+          <label for="name">Name:</label>
+          <input id="name" type="text" placeholder="Your name" name="name">
+          <label for="email">Email:</label>
+          <input id="email" type="email" placeholder="Email address" name="_replyto">
+          <input type="hidden" name="_subject" value="Email to leonland.com">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" placeholder="Your message" rows="5"></textarea>
+          <input type="hidden" name="_next" value="http://www.leonland.com/thanks.html">
+          <button type="submit" value="Send">Send it</button>
+        </fieldset>
+      </form>
+		</section>
+    </main>
+    <footer>&copy;<%= year %> Leon Barnard</footer>
+<!--
+    = Credits and Thanks =
+		Preprocessing: http://harpjs.com
+    Hosting: https://pages.github.com/
+    Email form: http://formspree.io/
+-->
+	</body>
