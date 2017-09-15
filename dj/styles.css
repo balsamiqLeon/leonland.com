@@ -65,7 +65,7 @@ div.widgets {
 }
 
 iframe {
-  min-width: 320px;
+  min-width: 318px;
   max-width: 620px;
   padding: 6px;
   border: 1px solid #ccc;
