@@ -7,7 +7,6 @@
   <title>Leon Barnard - San Francisco Bay Area DJ</title>
   <link rel="stylesheet" type="text/css" title="Stylesheet" href="styles.css">
   <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,400italic" rel="stylesheet">
-  <script src="main.js" type="text/javascript"></script>
 </head>
 <body>
 <section class="header">
@@ -40,7 +39,8 @@
 <section class="contact">
 <h2><span>Contact</span></h2>
 <p>Book me for your next event or par-tay!</p>
-<form method="POST" action="http://formspree.io/leonbarnard@gmail.com">
+<div class="return fail hidden">Oh no! Something went wrong.</div>
+<form id="contactForm" method="POST" action="http://formspree.io/leonbarnard@gmail.com">
   <fieldset>
     <div class="form-field">
     <label for="name">Name:</label>
@@ -52,10 +52,12 @@
     <label for="message">Message:</label>
     <span><textarea id="message" name="message" placeholder="Your message" rows="5"></textarea></span></div>
     <div class="form-field">
-    <button type="submit" value="Send">Send it</button></div>
+    <button type="submit" value="Send" id="submit">Send it</button></div>
   </fieldset>
 </form>
+<div class="return success hidden">Transmission Received!</div>
 </section>
 <footer><p>&copy;2017 Leon Barnard</p></footer>
+<script src="scripts.js" type="text/javascript"></script>
 </body>
 </html>

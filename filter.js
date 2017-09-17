@@ -1,1 +1,28 @@
-$(document).ready(function(){$("a.filter-docs").click(function(e){e.preventDefault(),$("#writing li:not(.docs), #speaking li:not(.docs), span:not(.docs)").addClass("hidden"),$(".all, span.docs, li.docs").removeClass("hidden")}),$("a.filter-ux").click(function(e){e.preventDefault(),$("#writing li:not(.ux), #speaking li:not(.ux), span:not(.ux)").addClass("hidden"),$(".all, span.ux, li.ux").removeClass("hidden")}),$("a.filter-wireframing").click(function(e){e.preventDefault(),$("#writing li:not(.wireframing), #speaking li:not(.wireframing), span:not(.wireframing)").addClass("hidden"),$(".all, span.wireframing, li.wireframing").removeClass("hidden")}),$("a.filter-remote").click(function(e){e.preventDefault(),$("#writing li:not(.remote), #speaking li:not(.remote), span:not(.remote)").addClass("hidden"),$(".all, span.remote, li.remote").removeClass("hidden")}),$("a.filter-web").click(function(e){e.preventDefault(),$("#writing li:not(.web), #speaking li:not(.web), span:not(.web)").addClass("hidden"),$(".all, span.web, li.web").removeClass("hidden")}),$("a.all").click(function(e){e.preventDefault(),$("#writing li, #speaking li").removeClass("hidden"),$("a.all, #writing span, #speaking span").addClass("hidden")})});
+function toggleCategories(category) {
+  document.querySelectorAll('ul.filterable>li, h1.filterable>span').forEach(function(element) {
+    element.classList.add('hidden');
+  });
+  document.querySelector('.filter-all').classList.remove('hidden');
+  document.querySelectorAll("."+category).forEach(function(element) {
+    element.classList.remove('hidden');
+  });
+}
+
+document.querySelectorAll('a.filter').forEach(function(element) {
+    element.addEventListener('click', function(event) {
+      event.preventDefault();
+      var category = element.classList[1].substr(7);
+      if (category == 'all') {
+        element.classList.add('hidden');
+        document.querySelectorAll('ul.filterable>li').forEach(function(element) {
+          element.classList.remove('hidden');
+        });
+        document.querySelectorAll('h1.filterable>span').forEach(function(element) {
+          element.classList.add('hidden');
+        });
+      } else {
+      toggleCategories(category);
+    };
+      console.log('clicked on '+element.classList[1].substr(7));
+})
+    });

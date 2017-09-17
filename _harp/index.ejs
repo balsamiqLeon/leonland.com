@@ -1,8 +1,5 @@
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="filter.js"></script>
 		<title>Leon Barnard has a website</title>
 		<link rel="stylesheet" href="styles.css">
-		<!-- <link rel="stylesheet" href="filter.css"> -->
 	</head>
 	<body id="index">
 <h1>Leonland</h1>
@@ -23,13 +20,13 @@
 		</section>
 		<section id="about">
   		<h1>About Me</h1>
-      <p>My name is <strong>Leon Barnard</strong>. I'm a dad, husband, and writer/designer. I work at <a href="http://balsamiq.com/">Balsamiq</a>, maker of <a href="http://balsamiq.com/products/mockups/">Mockups</a>, the best little wireframing tool around. I help people and technology get along better.</p>
-			<p>I <a href="#writing">write</a> and <a href="#speaking">speak</a> about <a href="#docs" class="filter-docs">#documentation</a>, <a href="#ux" class="filter-ux">#UX</a>, <a href="#wireframing" class="filter-wireframing">#wireframing</a>, <a href="#remote" class="filter-remote">#remote work</a>, and <a href="#web" class="filter-web">#web technologies</a><a href="#all" class="all hidden"><em> (show all)</em></a>. Sometimes I <a href="#projects">make stuff</a>.</p>
+      <p>My name is <strong>Leon Barnard</strong>. I'm a dad, husband, and writer/designer. I work at <a href="http://balsamiq.com/">Balsamiq</a>, maker of the best little wireframing tool around. I help people and technology get along better.</p>
+			<p>I <a href="#writing">write</a> and <a href="#speaking">speak</a> about <a href="#docs" class="filter filter-docs">#documentation</a>, <a href="#ux" class="filter filter-ux">#UX</a>, <a href="#wireframing" class="filter filter-wireframing">#wireframing</a>, <a href="#remote" class="filter filter-remote">#remote work</a>, and <a href="#web" class="filter filter-web">#web technologies</a><a href="#all" class="filter filter-all hidden"><em> (show all)</em></a>. Sometimes I <a href="#projects">make stuff</a>.</p>
 		<hr>
 		</section>
 		<section id="writing">
-			<h1>Writing <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
-				<ul>
+			<h1 class="filterable">Writing <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
+				<ul class="filterable">
 					<li class="wireframing"><a href="https://www.codementor.io/blog/what-is-wireframing-2cs7dp0k6y">What is Wireframing and How It Can Improve Communication with Freelance Developers</a> - <time datetime="2017-08-02">August 2, 2017</time> - <a href="https://www.codementor.io/blog" class="source">Codementor Blog</a></li>
 					<li class="docs"><a href="http://docslikecode.com/articles/balsamiq-case-study-part-3/">Balsamiq Docs Case Study, Part 3: Lists Get a Makeover</a> - <time datetime="2017-04-15">April 15, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
 					<li class="docs"><a href="http://docslikecode.com/articles/balsamiq-case-study-part-2/">Balsamiq Docs Case Study, Part 2: Animated GIFs Pause and Play</a> - <time datetime="2017-04-09">April 9, 2017</time> - <a href="http://docslikecode.com/articles/" class="source">Docs Like Code</a></li>
@@ -61,8 +58,8 @@
 		</section>
 
 		<section id="speaking">
-			<h1>Interviews and Talks <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
-				<ul>
+			<h1 class="filterable">Interviews and Talks <span class="docs hidden">about <strong class="highlight">documentation</strong></span><span class="ux hidden">about <strong class="highlight">UX</strong></span><span class="wireframing hidden">about <strong class="highlight">wireframing</strong></span><span class="remote hidden">about <strong class="highlight">remote work</strong></span><span class="web hidden">about <strong class="highlight">web technologies</strong></span></h1>
+				<ul class="filterable">
 					<li class="remote"><a href="http://pajamas.io/leon-barnard-balsamic/">Interview with Pajamas.io about Remote Work</a> - <time datetime="2017-06-06">June 6, 2017</time> - <a href="http://pajamas.io/" class="source">Pajamas.io</a></li>
 					<li class="remote"><a href="https://www.getsmarter.com/career-advice/industry-advice/benefits-of-remote-working">9 Workplace Experts on the Benefits of Remote Working</a> - <time datetime="2017-02-17">February 17, 2017</time> - <a href="https://www.getsmarter.com/career-advice/" class="source">GetSmarter Career Advice Newsletter</a></li>
 					<li class="docs web"><a href="http://www.slideshare.net/LeonBarnard/bending-markdown-to-your-will-with-your-static-site-generator">Lightning Talk: Bending Markdown to Your Will with Your Static Site Generator</a> - <time datetime="2017-02-07">February 7, 2017</time> - <a href="https://www.meetup.com/Write-the-Docs-SF/events/237025601/" class="source">Write The Docs San Francisco Meetup</a></li>
@@ -122,4 +119,5 @@
     CSS neatification: http://www.styleneat.com/
 		Photo of me by @francescafabbri
 -->
+<script src="filter.js"></script>
 	</body>

@@ -1,3 +1,0 @@
-a[class="docs"]:focus > li:not([class="docs"]) {
- display:none;
-}
