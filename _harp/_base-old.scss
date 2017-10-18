@@ -1,4 +1,4 @@
-@import 'colors07';
+@import 'colors06';
 
 header, section, footer, aside, nav, main, article, figure {display: block;}
 
@@ -22,6 +22,13 @@ body > h1 {
 body#blog > h1 {
 	display: block;
 }
+
+footer {
+	background-color: $link-color;
+	padding: 13px 10px 8px 205px;
+	color: #eee;
+	font-size: 90%;
+ }
 
 p {
 	line-height: 1.7;
@@ -77,9 +84,8 @@ nav {
  }
 
 section {
-	max-width: 760px;
+	width: 618px;
 	margin: 3em auto 4em auto;
-	padding: 0 5vw;
 
 	a:hover {
 		text-decoration: underline;
@@ -120,16 +126,17 @@ section#me {
 
 #connect li, #interests li {
 	list-style-type: none;
-	min-width: 192px;
-	// max-width: 760px;
+	width: 192px;
 	height: 48px;
+	float: left;
+	clear: right;
 	text-align: center;
 	background-color: $button-bg-color;
 	margin: 9px 9px;
 	padding: 0;
 	border-radius: 4px;
 	border: 1px solid $top-border-color;
-	flex-grow: 1;
+	display: inline-block;
  }
 
 #connect li a, #interests li a {
@@ -141,14 +148,18 @@ section#me {
  }
 
 #connect li:hover, #interests li:hover {
+// 	border: 1px solid $button-bg-color;
 	background-color: lighten($button-bg-color, 5%);
  }
 
 #interests ul, #connect ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
+	padding-left: 0;
+	display: inline-block;
+	position: relative;
+	margin-left: -9px;
+	margin-right: -9px;
+	margin-top: -5px;
+	text-align: center;
  }
 
 li img {
@@ -209,20 +220,28 @@ time {
  	display: none;
  }
 
-footer {
-	background-color: $link-color;
-	color: #eee;
-	font-size: 90%;
-}
-
-footer p {
-	max-width: 760px;
-	padding: 0 5vw;
-	margin: 0 auto;
-	padding: 8px 5vw;
-}
-
- @media (max-width: 1024px) {
+ @media (max-width: 910px) {
  nav {display: none;}
- body > h1 {display: block;}
+ footer {padding-left: 10px;}
  }
+
+ @media (max-width: 767px) {
+	 section {
+	 	padding: 0 15px;
+	 	margin: 3em auto 4em auto;
+	 	width: auto;
+	  }
+
+	 body > h1 {display: block;}
+
+	 #connect li, #interests li {
+	 	float: none;
+		display: block;
+		width: auto;
+	  }
+
+	 #connect ul, #interests ul {
+	 	text-align: center;
+	 	display: inherit;
+	  }
+	}
